@@ -28,6 +28,8 @@ def chooseCave():
     print("Would you like to examine the caves?")
     if input() == 'yes' or input() == 'y' or input() == 'Y'or input() == 'Yes':
         describeCaves()
+    else:
+        print('which cave will you venture down? (Right 1 or Left 2)')
     cave = ""
     while cave != '1' and cave != '2':
         print('which cave will you venture down? (Right 1 or Left 2)')

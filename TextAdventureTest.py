@@ -39,8 +39,23 @@ def checkCave(chooseCave):
     time.sleep(2)
     print('The cave is dark , you feel an intense heat on your face.....')
     time.sleep(2)
+    print('You see a glimmer out of the corner of your eye, do you examine?\n')
+    chestAnswer = ''
+    while chestAnswer != '1' and chestAnswer != '2':
+        print('yes or no (1 or 2)')
+        chestAnswer = input()
+    if chestAnswer == 1:
+        print('you open the chest and see that is is locked but a long wide dust patch leads away from it to a book '
+              'bound in chain')
     print('You walk for what seems like hours in the pitch black when suddenly you spot the beast across the cavern')
     time.sleep(2)
+
+    print('	Night Fury.\n'
+          'Speed: Unknown.\n'
+          'Size: Unknown.\n'
+          'The unholy offspring of lightning and death itself. '
+          'Never engage this dragon. Your only chance:'
+          ' Hide and pray it does not find you.')
 
     friendlyCave = random.randint(1, 2)
     if checkCave == str(friendlyCave):

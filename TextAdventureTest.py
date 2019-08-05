@@ -26,7 +26,7 @@ def describeCaves():
 
 def chooseCave():
     print("Would you like to examine the caves?")
-    if input() == 'yes' or input() == 'y' or input() == 'Y'or input() == 'Yes':
+    if input() == 'yes' or input() == 'y' or input() == 'Y' or input() == 'Yes':
         describeCaves()
     else:
         print('which cave will you venture down? (Right 1 or Left 2)')
@@ -62,7 +62,6 @@ def checkCave(chooseCave):
     time.sleep(1)
     print('You walk for what seems like hours in the pitch black when suddenly you spot the beast across the cavern')
     time.sleep(2)
-
 
     friendlyCave = random.randint(1, 2)
     if checkCave == str(friendlyCave):
